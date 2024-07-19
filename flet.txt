@@ -1,0 +1,22 @@
+INSTALACION
+_________________________
+md first-flet-app
+cd first-flet-app
+python -m venv .venv
+.venv\Scripts\activate
+
+pip install flet
+python.exe -m pip install --upgrade pip
+flet --version
+pip freeze > requirements.txt 	###agrega dependencias y crea archivo requirements.txt
+pip install poetry
+poetry new Latribuapp
+cd latribuapp
+
+pip install -r requirements.txt
+
+
+
+poetry run flet --version
+
+flet create latibucr
